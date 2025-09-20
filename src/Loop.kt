@@ -6,5 +6,9 @@ fun main(){
         index++
     }
     println("Замок защищен!")
+    print("Введите номер месяца (1-12): ")
+    val month = readln().toInt()
+    val ml = listOf(31,30,31,30,31,30,31,30,31,30,31,28)
+    println("В этом месяце ${ml[month]}")
 
 }
