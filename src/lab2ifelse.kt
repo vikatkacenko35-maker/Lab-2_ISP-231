@@ -1,10 +1,10 @@
 fun main() {
     //print("Введите первое число: ")
-   // val num1 = readln().toInt()
+    //val num1 = readln().toInt()
     //print("Введите второе число: ")
     //val num2 = readln().toInt()
     //val max = if (num1 > num2) num1 else num2
-   //println(max)
+    //println(max)
     //if (num1 > num2) {
     //    println("num 1 > num2")
     //} else {
@@ -22,5 +22,16 @@ fun main() {
     } else{
         println("Полученный урон ${damage}")
     }
+    print("Введите ваш уровень: ")
+    val lvl  = readln().toInt()
+    print("У вас есть VIP-стaтус?")
+    val vip = if (readln() == "Да") true else false
+    if (lvl >= 30 && vip || lvl >= 50){
+        println("Доступ разрешен!")
+    }else{
+        println("Доступ запрещен!")
+    }
+
+
 
 }
