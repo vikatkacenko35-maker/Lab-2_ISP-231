@@ -1,3 +1,4 @@
     fun main(){
-        println("Hello")
+        var num = 10
+        println(num)
     }
